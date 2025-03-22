@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PipeComponent } from './Component/pipe/pipe.component';
+import { DataBindingComponent } from './Component/data-binding/data-binding.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PipeComponent,
+    DataBindingComponent
   ],
   imports: [
     BrowserModule,
