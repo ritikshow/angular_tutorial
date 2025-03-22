@@ -5,16 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PipeComponent } from './Component/pipe/pipe.component';
 import { DataBindingComponent } from './Component/data-binding/data-binding.component';
+import { TemplateFormComponent } from './Component/Form/template-form/template-form.component';
+import { ReactiveFormComponent } from './Component/Form/reactive-form/reactive-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     PipeComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    TemplateFormComponent,
+    ReactiveFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
