@@ -1,0 +1,26 @@
+ <div class="row">
+    <h1>Display Data Of Student</h1>
+ </div>
+  <div class="row">
+    <div class="col-6">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>street</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let student of studentData">
+                    <td>{{ student.name }}</td>
+                    <td>{{ student.username }}</td>
+                    <td>{{ student.email }}</td>
+                    <td>{{student.address.street}}</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div>
+  </div>

@@ -8,6 +8,8 @@ import { DataBindingComponent } from './Component/data-binding/data-binding.comp
 import { TemplateFormComponent } from './Component/Form/template-form/template-form.component';
 import { ReactiveFormComponent } from './Component/Form/reactive-form/reactive-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { GetDataComponent } from './Component/GetData/get-data/get-data.component'; 
 
 @NgModule({
   declarations: [
@@ -15,13 +17,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     PipeComponent,
     DataBindingComponent,
     TemplateFormComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    GetDataComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
