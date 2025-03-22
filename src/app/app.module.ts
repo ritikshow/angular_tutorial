@@ -9,7 +9,8 @@ import { TemplateFormComponent } from './Component/Form/template-form/template-f
 import { ReactiveFormComponent } from './Component/Form/reactive-form/reactive-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { GetDataComponent } from './Component/GetData/get-data/get-data.component'; 
+import { GetDataComponent } from './Component/GetData/get-data/get-data.component';
+import { NgTemplateComponent } from './Component/Directive/ng-template/ng-template.component'; 
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GetDataComponent } from './Component/GetData/get-data/get-data.componen
     DataBindingComponent,
     TemplateFormComponent,
     ReactiveFormComponent,
-    GetDataComponent
+    GetDataComponent,
+    NgTemplateComponent
   ],
   imports: [
     BrowserModule,
