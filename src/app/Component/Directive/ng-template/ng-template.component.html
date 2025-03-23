@@ -3,21 +3,43 @@
 </div>
 
 <div class="row pt-3">
-   <div class="col-3">
-     <div class="bg-primary p-3" *ngIf="isUserLoggedIN; else notLogin" >
-         {{loggerUserName}}
+    <div class="col-3">
+        <div class="bg-primary p-3" *ngIf="isUserLoggedIN; else notLogin">
+            {{loggerUserName}}
+        </div>
+        <ng-template #notLogin>
+            <div class="bg-primary p-3">
+                <span>User is not login</span>
+            </div>
+        </ng-template>
     </div>
-    <ng-template #notLogin>
-        <div class="bg-primary p-3" >
-            <span>User is not login</span>
-       </div>
-    </ng-template>
-   </div>
+
+    <div class="col-4">
+        <ng-template #dynaicTem>
+            <p>Hi From Dynamic1</p>
+        </ng-template>
+        <ng-template #dynaicTem>
+            <p>Hi From Dynamic2</p>
+        </ng-template>
+        <ng-template #dynaicTem>
+            <p>Hi From Dynamic3</p>
+        </ng-template>
+    </div>
+    <div class="col-4">
+        <div #dyanamicContainer>
+            
+        </div>
+    </div>
 </div>
 
 <div class="row pt-3">
     <div class="col-3 text-center">
-          <button class="btn btn-success mx-2">Show</button>
-          <button class="btn btn-danger mx-2">Hide</button>
+       
     </div>
-</div> 
+    <div class="col-3 text-center">
+        
+    </div>
+    <div class="col-3 text-center">
+        <button class="btn btn-danger mx-2" (click)="loadTemplate()">Load Container</button>
+    </div>
+</div>

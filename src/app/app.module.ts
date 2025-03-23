@@ -10,7 +10,8 @@ import { ReactiveFormComponent } from './Component/Form/reactive-form/reactive-f
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { GetDataComponent } from './Component/GetData/get-data/get-data.component';
-import { NgTemplateComponent } from './Component/Directive/ng-template/ng-template.component'; 
+import { NgTemplateComponent } from './Component/Directive/ng-template/ng-template.component';
+import { ReactiveFromAdvanceComponent } from './Component/Form/Reactive_form_advance/reactive-from-advance/reactive-from-advance.component'; 
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NgTemplateComponent } from './Component/Directive/ng-template/ng-templa
     TemplateFormComponent,
     ReactiveFormComponent,
     GetDataComponent,
-    NgTemplateComponent
+    NgTemplateComponent,
+    ReactiveFromAdvanceComponent
   ],
   imports: [
     BrowserModule,

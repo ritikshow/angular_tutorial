@@ -6,6 +6,7 @@ import { TemplateFormComponent } from './Component/Form/template-form/template-f
 import { ReactiveFormComponent } from './Component/Form/reactive-form/reactive-form.component';
 import { GetDataComponent } from './Component/GetData/get-data/get-data.component';
 import { NgTemplateComponent } from './Component/Directive/ng-template/ng-template.component';
+import { ReactiveFromAdvanceComponent } from './Component/Form/Reactive_form_advance/reactive-from-advance/reactive-from-advance.component';
 
 const routes: Routes = [
  { path: 'pipe',component:PipeComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
  {path:'TemplateForm',component:TemplateFormComponent},
  { path:'reactivefrom',component:ReactiveFormComponent},
  {path:'getdata',component:GetDataComponent},
- {path:"ngtemplate",component:NgTemplateComponent}
+ {path:"ngtemplate",component:NgTemplateComponent},
+ {path:'reactiveformAdvance',component:ReactiveFromAdvanceComponent}
 
 
 
