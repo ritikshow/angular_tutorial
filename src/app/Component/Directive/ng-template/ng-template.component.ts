@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./ng-template.component.css']
 })
 export class NgTemplateComponent {
-  isUserLoggedIN: boolean = false;
+  isUserLoggedIN: boolean = true;
   loggerUserName : string ="Ritik"
 
     

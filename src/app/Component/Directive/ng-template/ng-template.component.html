@@ -4,9 +4,14 @@
 
 <div class="row pt-3">
    <div class="col-3">
-    <div class="bg-primary p-3" >
-    {{loggerUserName}}
+     <div class="bg-primary p-3" *ngIf="isUserLoggedIN; else notLogin" >
+         {{loggerUserName}}
     </div>
+    <ng-template #notLogin>
+        <div class="bg-primary p-3" >
+            <span>User is not login</span>
+       </div>
+    </ng-template>
    </div>
 </div>
 
@@ -15,4 +20,4 @@
           <button class="btn btn-success mx-2">Show</button>
           <button class="btn btn-danger mx-2">Hide</button>
     </div>
-</div>
+</div> 
