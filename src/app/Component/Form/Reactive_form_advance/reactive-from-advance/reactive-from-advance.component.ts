@@ -40,10 +40,9 @@ export class ReactiveFromAdvanceComponent {
     this.addNewLoanForm();
     this.applicationForm.valueChanges.subscribe(()=>{
        const formValue = this.applicationForm.value;
-       debugger;
        const {fName,mName,lName} = formValue;
        const fullName =  fName + " "+ mName + " "+ lName;
-
+       
        //this.applicationForm.controls['fullName'].setValue(fullName);
 
        this.applicationForm.patchValue({fullName: fullName, personalEmail: 'sadasd'},{emitEvent: false});

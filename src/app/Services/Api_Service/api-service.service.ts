@@ -13,6 +13,14 @@ export class APIServiceService {
   getStudents(): Observable<any> {
     return this.http.get<any>(this.apiUrl);
   }
+
+  postContact(obj: any):Observable<any>{
+    return this.http.post<any>('https://localhost:7153/api/Contacts',  obj);
+  }
+
+  getcontact():Observable<any>{
+    return this.http.get<any>('https://localhost:7153/api/Contacts');
+  }
    
 
 
