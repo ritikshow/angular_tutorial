@@ -8,7 +8,7 @@ import { APIServiceService } from 'src/app/Services/Api_Service/api-service.serv
 })
 export class GetDataComponent {
  
-   studentData: any;
+   Data: any;
   constructor(private apiServiceService: APIServiceService){}
 
   ngOnInit(): void {
@@ -17,8 +17,8 @@ export class GetDataComponent {
 
 
   fetchData(){
-  this.apiServiceService.getStudents().subscribe((res:any)=>{
-     this.studentData=res;
+  this.apiServiceService.getbooking().subscribe((res:any)=>{
+     this.Data=res;
   })
   }
 

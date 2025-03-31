@@ -6,12 +6,12 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class APIServiceService {
-  private apiUrl = 'https://jsonplaceholder.typicode.com/users';
+
   constructor(private http: HttpClient) {}
  
   
-  getStudents(): Observable<any> {
-    return this.http.get<any>(this.apiUrl);
+  getbooking(): Observable<any> {
+    return this.http.get<any>('https://localhost:7153/api/Booking');
   }
 
   postContact(obj: any):Observable<any>{
@@ -25,12 +25,19 @@ export class APIServiceService {
   editcontact(id: string, formvalue: any): Observable<any> {
     return this.http.put<any>(`https://localhost:7153/api/Contacts/${id}`, formvalue); 
   }
-  
 
   deleteContact(id: string): Observable<any> {
     return this.http.delete<any>(`https://localhost:7153/api/Contacts/${id}`);
   }
   
 
+  getcars():Observable<any>{
+    return this.http.get<any>('https://localhost:7153/api/Car');
+  }
+
+
+  postbooking(obj:any):Observable<any>{
+ return this.http.post<any>('https://localhost:7153/api/Booking',obj)
+  }
 
 }

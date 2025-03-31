@@ -2,22 +2,36 @@
     <h1>Display Data Of Student</h1>
  </div>
   <div class="row">
-    <div class="col-6">
+    <div class="">
         <table border="1">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Username</th>
-                    <th>Email</th>
-                    <th>street</th>
+                    <th>name</th>
+                    <th>email</th>
+                    <th>phoneNo</th>
+                    <th>bookingType</th>
+                    <th>carCompany</th>
+                    <th>carModel</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>pickup</th>
+                    <th>drop</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let student of studentData">
-                    <td>{{ student.name }}</td>
-                    <td>{{ student.username }}</td>
-                    <td>{{ student.email }}</td>
-                    <td>{{student.address.street}}</td>
+                <tr *ngFor="let booking of Data">
+                    <td>{{ booking.name }}</td>
+                    <td>{{ booking.email }}</td>
+                    <td>{{ booking.phoneNo }}</td>
+                    <td>{{booking.bookingType}}</td>
+                    <td>{{booking.carCompany}}</td>
+                    <td>{{booking.carModel}}</td>
+                    <td>{{booking.date}}</td>
+                    <td>{{booking.timr}}</td>
+                    <td>{{booking.pickup}}</td>
+                    <td>{{booking.drop}}</td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>

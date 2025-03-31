@@ -7,6 +7,7 @@ import { ReactiveFormComponent } from './Component/Form/reactive-form/reactive-f
 import { GetDataComponent } from './Component/GetData/get-data/get-data.component';
 import { NgTemplateComponent } from './Component/Directive/ng-template/ng-template.component';
 import { ReactiveFromAdvanceComponent } from './Component/Form/Reactive_form_advance/reactive-from-advance/reactive-from-advance.component';
+import { BookingComponent } from './Component/Booking/booking/booking.component';
 
 const routes: Routes = [
  {path: 'pipe',component:PipeComponent},
@@ -15,7 +16,8 @@ const routes: Routes = [
  {path:'reactivefrom',component:ReactiveFormComponent},
  {path:'getdata',component:GetDataComponent},
  {path:"ngtemplate",component:NgTemplateComponent},
- {path:'reactiveformAdvance',component:ReactiveFromAdvanceComponent}
+ {path:'reactiveformAdvance',component:ReactiveFromAdvanceComponent},
+ {path:'booknow',component:BookingComponent}
 ];
 
 @NgModule({

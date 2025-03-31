@@ -11,7 +11,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { GetDataComponent } from './Component/GetData/get-data/get-data.component';
 import { NgTemplateComponent } from './Component/Directive/ng-template/ng-template.component';
-import { ReactiveFromAdvanceComponent } from './Component/Form/Reactive_form_advance/reactive-from-advance/reactive-from-advance.component'; 
+import { ReactiveFromAdvanceComponent } from './Component/Form/Reactive_form_advance/reactive-from-advance/reactive-from-advance.component';
+import { BookingComponent } from './Component/Booking/booking/booking.component'; 
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ReactiveFromAdvanceComponent } from './Component/Form/Reactive_form_adv
     ReactiveFormComponent,
     GetDataComponent,
     NgTemplateComponent,
-    ReactiveFromAdvanceComponent
+    ReactiveFromAdvanceComponent,
+    BookingComponent
   ],
   imports: [
     BrowserModule,
