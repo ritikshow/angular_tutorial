@@ -7,10 +7,10 @@
   <div class="col-md-4">
     <label class="form-label">Name</label>
     <input type="text" formControlName="name" class="form-control">
-    <div class="text-danger" *ngIf="StudentForm.get('name')?.invalid && StudentForm.get('name')?.touched">
+    <!-- <div class="text-danger" *ngIf="StudentForm.get('name')?.invalid && StudentForm.get('name')?.touched">
       <small *ngIf="StudentForm.get('name')?.errors?.['required']">First name is required.</small>
       <small *ngIf="StudentForm.get('name')?.errors?.['minlength']">Minimum 4 characters required.</small>
-    </div>
+    </div> -->
   </div>
   <div class="col-md-4">
     <label class="form-label">age</label>
@@ -52,7 +52,9 @@
       </div>
     </div> -->
   <div class="col-12">
-    <button class="btn btn-primary" type="submit" (click)="OnSave()">Submit form</button>
+    <button *ngIf="active" class="btn btn-primary" type="submit" (click)="OnSave()">Submit form</button>
+    <button *ngIf="!active"  class="btn btn-warning" type="submit" (click)="Update()">Update</button>
+    
   </div>
 </form>
 
@@ -78,8 +80,8 @@
                 <td>{{item.email}}</td>
                 <td>{{item.address}}</td>
                 <td>
-                  <button>EDIT</button>
-                  <button >Delete</button>
+                  <button class="btn btn-primary" (click)="Onedit(item)" >EDIT</button>
+                  <button class="btn btn-danger" (click)="OnDelete(item.id)" >Delete</button>
                 </td>
         </tr>
       </tbody>

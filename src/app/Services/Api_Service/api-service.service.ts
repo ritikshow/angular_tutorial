@@ -21,7 +21,15 @@ export class APIServiceService {
   getcontact():Observable<any>{
     return this.http.get<any>('https://localhost:7153/api/Contacts');
   }
-   
+
+  editcontact(id: any, formvalue?: any):Observable<any>{
+    return this.http.put<any>('https://localhost:7153/api/Contacts/${id}',{});
+  }
+
+  deleteContact(id: string): Observable<any> {
+    return this.http.delete<any>(`https://localhost:7153/api/Contacts/${id}`);
+  }
+  
 
 
 }
