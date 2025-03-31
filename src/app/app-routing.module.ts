@@ -9,16 +9,13 @@ import { NgTemplateComponent } from './Component/Directive/ng-template/ng-templa
 import { ReactiveFromAdvanceComponent } from './Component/Form/Reactive_form_advance/reactive-from-advance/reactive-from-advance.component';
 
 const routes: Routes = [
- { path: 'pipe',component:PipeComponent},
- { path: 'Data-Binding',component:DataBindingComponent},
+ {path: 'pipe',component:PipeComponent},
+ {path: 'Data-Binding',component:DataBindingComponent},
  {path:'TemplateForm',component:TemplateFormComponent},
- { path:'reactivefrom',component:ReactiveFormComponent},
+ {path:'reactivefrom',component:ReactiveFormComponent},
  {path:'getdata',component:GetDataComponent},
  {path:"ngtemplate",component:NgTemplateComponent},
  {path:'reactiveformAdvance',component:ReactiveFromAdvanceComponent}
-
-
-
 ];
 
 @NgModule({

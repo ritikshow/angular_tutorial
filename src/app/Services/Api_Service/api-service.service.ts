@@ -22,9 +22,10 @@ export class APIServiceService {
     return this.http.get<any>('https://localhost:7153/api/Contacts');
   }
 
-  editcontact(id: any, formvalue?: any):Observable<any>{
-    return this.http.put<any>('https://localhost:7153/api/Contacts/${id}',{});
+  editcontact(id: string, formvalue: any): Observable<any> {
+    return this.http.put<any>(`https://localhost:7153/api/Contacts/${id}`, formvalue); 
   }
+  
 
   deleteContact(id: string): Observable<any> {
     return this.http.delete<any>(`https://localhost:7153/api/Contacts/${id}`);
