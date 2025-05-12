@@ -1,1 +1,20 @@
 <p>pipe works!</p>
+
+
+<h1 (click)="toggleNotification()">Get Notification</h1>
+
+<div *ngIf="showNotification" class="notification-popup" (click)="$event.stopPropagation()">
+  <div class="header">
+    <span>Notification Count: {{ notifications.length }}</span>
+    <button class="btn-unseen">UnSeen</button>
+    <button class="btn-clearall">Clear All</button>
+    <button class="btn-seen">Seen</button>
+  </div>
+
+  <div *ngFor="let item of notifications" class="notification-item">
+    <p>Table No: {{ item.tableNo }}</p>
+    <p>Order No: {{ item.orderNo }}</p>
+    <p>Message: {{ item.message }}</p>
+    <button class="btn-click">Click</button>
+  </div>
+</div>
